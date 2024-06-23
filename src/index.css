@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css";
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --primary-color: #25497a;
+  --secondary-color: #3366ff;
+  --body: #193253;
+  --textColor: #d9d9d9;
+  --headingColor: #6b90ff;
+  --inputBorderRadius: 10px;
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
